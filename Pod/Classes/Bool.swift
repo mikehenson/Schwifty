@@ -5,10 +5,9 @@
 // Copyright © 2015 Mike Henson. All rights reserved.
 //
 
-extension Bool {
-    mutating func toggle() -> Bool {
+public extension Bool {
+    public mutating func toggle() -> Bool {
         self = !self
         return self
     }
 }
-
