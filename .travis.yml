@@ -8,7 +8,7 @@ sudo: false
 cache: cocoapods
 podfile: Example/Podfile
 xcode_workspace: Example/Schwifty.xcworkspace
-xcode_scheme: Scwifty-Example
+xcode_scheme: Schwifty-Example
 xcode_sdk:
   - iphonesimulator9.1
 before_install:
@@ -27,7 +27,6 @@ script:
     -scheme Schwifty-Example
     -sdk iphonesimulator9.1
     -destination 'platform=iOS Simulator,name=iPhone 6 Plus'
-    test
     ONLY_ACTIVE_ARCH=NO
     CODE_SIGN_IDENTITY=""
     CODE_SIGNING_REQUIRED=NO
