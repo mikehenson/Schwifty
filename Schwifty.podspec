@@ -27,7 +27,7 @@ A collection of extensions on core and Apple SDK types, wrapper and helper funct
   s.source           = { :git => "https://github.com/mikehenson/Schwifty.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
