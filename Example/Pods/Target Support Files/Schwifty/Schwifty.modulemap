@@ -1,0 +1,6 @@
+framework module Schwifty {
+  umbrella header "Schwifty-umbrella.h"
+
+  export *
+  module * { export * }
+}
