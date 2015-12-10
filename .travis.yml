@@ -10,7 +10,7 @@ podfile: Example/Podfile
 xcode_workspace: Example/Schwifty.xcworkspace
 xcode_scheme: Schwifty-Example
 xcode_sdk:
-  - iphonesimulator9.1
+  - iphonesimulator
 before_install:
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
@@ -25,7 +25,7 @@ script:
   - xctool
     -workspace Example/Schwifty.xcworkspace
     -scheme Schwifty-Example
-    -sdk iphonesimulator9.1
+    -sdk iphonesimulator
     -destination 'platform=iOS Simulator,name=iPhone 6 Plus'
     ONLY_ACTIVE_ARCH=NO
     CODE_SIGN_IDENTITY=""
