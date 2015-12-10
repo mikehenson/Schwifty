@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Schwifty"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Helpers to smooth out the edges and limit verbosity in Swift and Apple's SDKs"
 
 # This description is used to generate tags and improve search results.
