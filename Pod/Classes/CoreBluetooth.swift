@@ -34,14 +34,32 @@ extension CBPeripheralState: CustomStringConvertible, CustomDebugStringConvertib
         var stateText = ""
 
         switch self {
-        case .Disconnected
+        case .Disconnected:
             stateText = "Disconnected"
-        case .Connecting
+        case .Connecting:
             stateText = "Connecting"
-        case .Connected
+        case .Connected:
             stateText = "Connected"
-        case .Disconnecting
+        case .Disconnecting:
             stateText = "Disconnecting"
+        }
+
+        return stateText
+    }
+    public var debugDescription: String {
+        return self.description
+    }
+}
+
+extension CBCharacteristicWriteType: CustomStringConvertible, CustomDebugStringConvertible {
+    public var description: String {
+        var stateText = ""
+
+        switch self {
+        case .WithResponse:
+            stateText = "With Response"
+        case .WithoutResponse:
+            stateText = "Without Response"
         }
 
         return stateText
