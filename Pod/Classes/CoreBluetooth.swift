@@ -29,3 +29,25 @@ extension CBCentralManagerState: CustomStringConvertible, CustomDebugStringConve
     }
 }
 
+extension CBPeripheralState: CustomStringConvertible, CustomDebugStringConvertible {
+    public var description: String {
+        var stateText = ""
+
+        switch self {
+        case .Disconnected
+            stateText = "Disconnected"
+        case .Connecting
+            stateText = "Connecting"
+        case .Connected
+            stateText = "Connected"
+        case .Disconnecting
+            stateText = "Disconnecting"
+        }
+
+        return stateText
+    }
+    public var debugDescription: String {
+        return self.description
+    }
+}
+
