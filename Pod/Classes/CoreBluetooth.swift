@@ -5,6 +5,8 @@
 // Copyright © 2015 Mike Henson. All rights reserved.
 //
 
+import CoreBluetooth
+
 extension CBCentralManagerState: CustomStringConvertible, CustomDebugStringConvertible {
     public var description: String {
         var stateText = ""
