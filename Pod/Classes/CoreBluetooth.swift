@@ -69,3 +69,18 @@ extension CBCharacteristicWriteType: CustomStringConvertible, CustomDebugStringC
     }
 }
 
+extension CBCharacteristic {
+    func readValue() {
+        // FIXME: Find some way to indicate whether or not this call did anything
+        if self.properties.contains(CBCharacteristicProperties.Read) {
+            self.service.peripheral.readValueForCharacteristic(self)
+        }
+    }
+}
+
+extension CBDescriptor {
+    func readValue() {
+        self.characteristic.service.peripheral.readValueForDescriptor(self)
+    }
+}
+
